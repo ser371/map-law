@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAP LAW FIRM</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <div class="logo">MAP LAW FIRM</div>
+            <div class="contact">
+                <a href="tel:+919213782334">+91 921 3782 334</a> |
+                <a href="tel:+911147069622">+91 11 47069622</a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Law Firm</a></li>
+                <li><a href="#">Family Law</a></li>
+                <li><a href="#">Civil Law</a></li>
+                <li><a href="#">Criminal Law</a></li>
+                <li><a href="#">Cyber Law</a></li>
+                <li><a href="#">Corporate Law</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Best Lawyer in Delhi - MAP LAW FIRM</h1>
+            <p>Professional legal services across family, civil, criminal, and corporate law.</p>
+            <a href="tel:+919213782334" class="cta-button">Consult Now</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about">
+        <div class="about-content">
+            <h2>About MAP LAW FIRM</h2>
+            <p>
+                MAP LAW FIRM has a legacy of serving clients with dedication and distinction for over a decade. 
+                Our team of experienced professionals offers expertise across a wide range of legal services, 
+                including family law, criminal defense, civil litigation, cyber law, and corporate law. 
+                We are committed to achieving favorable outcomes for our clients with a client-first approach and 
+                a reputation for delivering results. At MAP LAW FIRM, you can expect personalized, strategic legal 
+                counsel tailored to your unique needs.
+            </p>
+        </div>
+    </section>
+    
+    <!-- Practice Areas Section -->
+    <section class="practice-areas">
+        <h2>Practice Areas</h2>
+        <div class="practice-cards">
+            <div class="practice-card">
+                <h3>Family Law</h3>
+                <p>Expert assistance in divorce, child custody, adoption, and more.</p>
+            </div>
+            <div class="practice-card">
+                <h3>Civil Litigation</h3>
+                <p>Comprehensive services in property, consumer, and contract law.</p>
+            </div>
+            <div class="practice-card">
+                <h3>Criminal Law</h3>
+                <p>Defense in theft, assault, extortion, and more.</p>
+            </div>
+            <div class="practice-card">
+                <h3>Corporate Law</h3>
+                <p>Incorporations, mergers, foreign investment, and joint ventures.</p>
+            </div>
+            <div class="practice-card">
+                <h3>Cyber Law</h3>
+                <p>Protection against cybercrime, online harassment, and digital fraud.</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Script -->
+    <script>
+        // Function to check if elements are in the viewport
+        function isInViewport(element) {
+            const rect = element.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+    
+        // Add 'show' class when elements enter the viewport
+        function animateCards() {
+            const cards = document.querySelectorAll('.practice-card');
+            cards.forEach(card => {
+                if (isInViewport(card)) {
+                    card.classList.add('show');
+                }
+            });
+        }
+    
+        // Run animation on scroll
+        window.addEventListener('scroll', animateCards);
+    </script>
+    
+
+    <!-- Detailed Services Section -->
+    <section class="services">
+        <h2>Our Services</h2>
+        <p>We offer a range of legal services tailored to meet the needs of our clients:</p>
+        <ul>
+            <li><strong>Family Law:</strong> We handle cases related to child custody, divorce, domestic violence, and more, providing compassionate and thorough representation.</li>
+            <li><strong>Civil Litigation:</strong> Our firm deals with property disputes, contractual issues, consumer rights, and various other civil matters with a client-focused approach.</li>
+            <li><strong>Criminal Defense:</strong> From fraud and theft to complex criminal cases, we offer robust defense services tailored to secure your rights and reputation.</li>
+            <li><strong>Corporate Law:</strong> Supporting businesses with legal frameworks, we manage incorporations, mergers, acquisitions, and more.</li>
+            <li><strong>Cyber Law:</strong> Safeguarding clients against cyberbullying, online fraud, and intellectual property theft, ensuring digital rights are upheld.</li>
+        </ul>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="contact-us">
+        <h2>Contact Us</h2>
+        <p>For professional legal assistance, reach out to us:</p>
+        <address>
+            <p>MAP LAW FIRM</p>
+            <p>J-12/22, Rajouri Garden, New Delhi - 110027</p>
+            <p>Phone: +91 921 3782 334 | +91 11 47069622</p>
+            <p>Email: <a href="mailto:maplawfirm@gmail.com">maplawfirm@gmail.com</a></p>
+        </address>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2014-2023, MAP LAW FIRM, All Rights Reserved.</p>
+            <p>Follow us on <a href="#">Facebook</a>, <a href="#">Twitter</a>, <a href="#">LinkedIn</a>.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
